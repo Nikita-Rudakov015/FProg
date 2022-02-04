@@ -10,7 +10,6 @@ namespace FProg
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("My friends");
             Console.WriteLine("C#-is interesting language!");
         }
     }
