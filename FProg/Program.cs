@@ -11,7 +11,6 @@ namespace FProg
         static void Main(string[] args)
         {
             Console.WriteLine("My friends");
-            Console.WriteLine("/n Right");
         }
     }
 }
