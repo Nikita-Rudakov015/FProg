@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FProg", "FProg\FProg.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson_data_type", "lesson_data_type\lesson_data_type.csproj", "{04788543-7664-4432-BA72-8C0D4D0B52AB}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson-3-condition-loops", "lesson-3-condition-loops\lesson-3-condition-loops.csproj", "{425D4EFB-A3C2-47ED-81DB-7B9DBA85FBB7}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson-4-methods", "lesson-4-methods\lesson-4-methods.csproj", "{DE35F808-3F26-4BD6-A1A7-74F33770A783}"
+>>>>>>> classwork/lesson-4-methods
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +27,17 @@ Global
 		{04788543-7664-4432-BA72-8C0D4D0B52AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04788543-7664-4432-BA72-8C0D4D0B52AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04788543-7664-4432-BA72-8C0D4D0B52AB}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{425D4EFB-A3C2-47ED-81DB-7B9DBA85FBB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{425D4EFB-A3C2-47ED-81DB-7B9DBA85FBB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{425D4EFB-A3C2-47ED-81DB-7B9DBA85FBB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{425D4EFB-A3C2-47ED-81DB-7B9DBA85FBB7}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{DE35F808-3F26-4BD6-A1A7-74F33770A783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE35F808-3F26-4BD6-A1A7-74F33770A783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE35F808-3F26-4BD6-A1A7-74F33770A783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE35F808-3F26-4BD6-A1A7-74F33770A783}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> classwork/lesson-4-methods
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
