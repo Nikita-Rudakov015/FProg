@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Timers;
 
 namespace lesson_data_type
 {
@@ -89,6 +90,16 @@ namespace lesson_data_type
             Console.WriteLine($"The second example: {Math.Abs(x) * Math.Sin(x)}");
             Console.WriteLine($"The 3-id example: {2 * Math.PI * x}");
             Console.WriteLine($"The 4-th example: {Math.Max(x, y)}");
+
+
+            var hours = TimeSpan.FromHours(6);
+            Console.WriteLine(TimeSpan.FromHours(6) + TimeSpan.FromHours(6));
+
+            var timer = new Timer();
+            timer.Interval = TimeSpan.FromSeconds(2).TotalMilliseconds;
+            timer.Elapsed += (a, e) => Console.WriteLine("Some");
+            timer.Start();
+            Console.ReadKey();
         }
     }
 }
