@@ -70,10 +70,11 @@ namespace homework_lesson_4_methods
         }
         static int MaxValue(int a, int b)
         {
-            if(a > b)
+            if (a > b)
             {
-                Console.Write($"The max value is: {Math.Max(a,b)}");
-            } else if(a < b)
+                Console.Write($"The max value is: {Math.Max(a, b)}");
+            }
+            else if (a < b)
             {
                 Console.Write($"The max value is: {Math.Max(a, b)}");
             }
@@ -85,21 +86,23 @@ namespace homework_lesson_4_methods
             if (a < b)
             {
                 Console.Write($"The min value is: {Math.Min(a, b)}");
-            } else if(a > b)
+            }
+            else if (a > b)
             {
-                Console.Write($"The min value is: {Math.Min(a,b)}");
+                Console.Write($"The min value is: {Math.Min(a, b)}");
             }
             return 0;
         }
 
         static bool TrySumIfOdd(int a, int b, int c = 0)
         {
-            c = a + b; 
+            c = a + b;
             if (c % 2 == 1)
             {
                 Console.WriteLine($"Sum is odd number: {c}");
                 return true;
-            } else if (c % 2 == 0)
+            }
+            else if (c % 2 == 0)
             {
                 Console.WriteLine($"Sum is even number: {c}");
                 return false;
@@ -112,10 +115,12 @@ namespace homework_lesson_4_methods
             if (a > b && a > c)
             {
                 Console.Write($"The max value is: {a}");
-            } else if (b > a && b > c)
+            }
+            else if (b > a && b > c)
             {
                 Console.Write($"The max value is: {b}");
-            } else if (c > a && c > b)
+            }
+            else if (c > a && c > b)
             {
                 Console.Write($"The max value is: {c}");
             }
@@ -127,13 +132,16 @@ namespace homework_lesson_4_methods
             if (a > b && a > c && a > d)
             {
                 Console.Write($"The max value is: {a}");
-            } else if (b > a && b > c && b > d)
+            }
+            else if (b > a && b > c && b > d)
             {
                 Console.Write($"The max value is: {b}");
-            } else if (c > a && c > b && c > d)
+            }
+            else if (c > a && c > b && c > d)
             {
                 Console.Write($"The max value is: {c}");
-            } else if (d > a && d > b && d > c)
+            }
+            else if (d > a && d > b && d > c)
             {
                 Console.Write($"The max value is: {d}");
             }
@@ -143,13 +151,15 @@ namespace homework_lesson_4_methods
         {
             if (a > b && a > c)
             {
-                Console.Write($"The max value is: {a}");
-            } else if (b > a && b > c)
+                Console.Write($"The min value is: {a}");
+            }
+            else if (b > a && b > c)
             {
-                Console.Write($"The max value is: {b}");
-            } else if (c > a && c > b)
+                Console.Write($"The min value is: {b}");
+            }
+            else if (c > a && c > b)
             {
-                Console.Write($"The max value is: {c}");
+                Console.Write($"The min value is: {c}");
             }
             return 0;
         }
@@ -158,16 +168,19 @@ namespace homework_lesson_4_methods
         {
             if (a > b && a > c && a > d)
             {
-                Console.Write($"The max value is: {a}");
-            } else if (b > a && b > c && b > d)
+                Console.Write($"The min value is: {a}");
+            }
+            else if (b > a && b > c && b > d)
             {
-                Console.Write($"The max value is: {b}");
-            } else if (c > a && c > b && c > d)
+                Console.Write($"The min value is: {b}");
+            }
+            else if (c > a && c > b && c > d)
             {
-                Console.Write($"The max value is: {c}");
-            } else if (d > a && d > b && d > c)
+                Console.Write($"The min value is: {c}");
+            }
+            else if (d > a && d > b && d > c)
             {
-                Console.Write($"The max value is: {d}");
+                Console.Write($"The min value is: {d}");
             }
             return 0;
         }
