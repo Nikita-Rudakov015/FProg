@@ -11,7 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson-3-condition-loops", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson-4-methods", "lesson-4-methods\lesson-4-methods.csproj", "{DE35F808-3F26-4BD6-A1A7-74F33770A783}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework-lesson-4-methods", "homework-lesson-4-methods\homework-lesson-4-methods.csproj", "{FAB318F7-98DA-4227-9A0A-0A5FD75B34F4}"
+=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "homework-lesson-4-methods", "homework-lesson-4-methods\homework-lesson-4-methods.csproj", "{485CEFCE-86A8-470E-A6ED-604AE01EFBEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson-6-arrays", "lesson-6-arrays\lesson-6-arrays.csproj", "{F3FAA36E-3544-4210-8B57-F63B4D63B633}"
+>>>>>>> classwork/lesson-6-arrays
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +41,21 @@ Global
 		{DE35F808-3F26-4BD6-A1A7-74F33770A783}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE35F808-3F26-4BD6-A1A7-74F33770A783}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE35F808-3F26-4BD6-A1A7-74F33770A783}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{FAB318F7-98DA-4227-9A0A-0A5FD75B34F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FAB318F7-98DA-4227-9A0A-0A5FD75B34F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAB318F7-98DA-4227-9A0A-0A5FD75B34F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAB318F7-98DA-4227-9A0A-0A5FD75B34F4}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{485CEFCE-86A8-470E-A6ED-604AE01EFBEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485CEFCE-86A8-470E-A6ED-604AE01EFBEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{485CEFCE-86A8-470E-A6ED-604AE01EFBEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{485CEFCE-86A8-470E-A6ED-604AE01EFBEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3FAA36E-3544-4210-8B57-F63B4D63B633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3FAA36E-3544-4210-8B57-F63B4D63B633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3FAA36E-3544-4210-8B57-F63B4D63B633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3FAA36E-3544-4210-8B57-F63B4D63B633}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> classwork/lesson-6-arrays
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

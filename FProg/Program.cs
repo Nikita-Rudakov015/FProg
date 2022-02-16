@@ -10,12 +10,11 @@ namespace FProg
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
+
             Console.WriteLine("C#-is interesting language!");
-=======
+
             Console.WriteLine("My friends");
             Console.WriteLine("/n Right");
->>>>>>> NewBranch
         }
     }
 }
