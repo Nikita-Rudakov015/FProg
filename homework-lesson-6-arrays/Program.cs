@@ -12,8 +12,27 @@ namespace homework_lesson_6_arrays
             sort.GenerateArray();
             sort.PrintArray();
 
-            Console.WriteLine($"\nPlease, input sort by buble: 1-Ascending  2-Descending");
-            string choose = Console.ReadLine();
+            /*Console.WriteLine($"\nPlease, input sort by buble: 1-Ascending  2-Descending");*/
+            Console.WriteLine($"\nBuble sort ascending array 0-100");
+            sort.BubleSortAsc();
+            sort.PrintArray();
+
+            Console.WriteLine($"\nBuble sort desccending array 0-100");
+            sort.BubleSortDesc();
+            sort.PrintArray();
+
+            Console.WriteLine($"\nSelection sort ascending array 0-100");
+            sort.SelectionSortAsc();
+            sort.PrintArray();
+
+            Console.WriteLine($"\nSelection sort desccending array 0-100");
+            sort.SelectionSortDesc();
+            sort.PrintArray();
+            
+            Console.WriteLine($"\nInsertion sort desccending array 0-100");
+            sort.InsertionSortAsc();
+            sort.PrintArray();
+            /*string choose = Console.ReadLine();
             if(int.TryParse(choose, out int method))
             {
                 switch (method)
@@ -31,7 +50,7 @@ namespace homework_lesson_6_arrays
                     default:
                         break;
                 }
-            }
+            }*/
         }
 
         public void GenerateArray()
@@ -45,7 +64,7 @@ namespace homework_lesson_6_arrays
 
         public void PrintArray()
         {
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < array.Length; i ++)
             {
                 Console.Write(array[i] + " ");
             }
@@ -80,6 +99,58 @@ namespace homework_lesson_6_arrays
                         array[j] = temp;
                     }
                 }
+            }
+        }
+
+        public void SelectionSortAsc()
+        {
+            for(int i = 0; i < array.Length - 1; i ++)
+            {
+                int iMin = i; 
+                for(int j = i + 1; j < array.Length; j ++)
+                {
+                    if(array[j] < array[iMin])
+                    {
+                        iMin = j;
+                    }
+                }
+                int tmp = array[iMin];
+                array[iMin] = array[i];
+                array[i] = tmp;
+            }   
+        }
+
+        public void SelectionSortDesc()
+        {
+            for (int i = 0; i < array.Length - 1; i ++)
+            {
+                int iMin = i;
+                for (int j = i + 1; j < array.Length; j ++)
+                {
+                    if (array[j] > array[iMin])
+                    {
+                        iMin = j;
+                    }
+                }
+                int tmp = array[iMin];
+                array[iMin] = array[i];
+                array[i] = tmp;
+            }
+        }
+
+        public void InsertionSortAsc()
+        {
+            int index;
+            int temp;
+            for(int i = 1; i < array.Length; i++)
+            {
+                temp = array[i];
+                index = i;
+                while (index > 0 && temp > array[index - 1])
+                {
+                    array[index] = array[index - 1];
+                }
+                array[index] = temp;
             }
         }
     }
