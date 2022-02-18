@@ -13,44 +13,29 @@ namespace homework_lesson_6_arrays
             sort.PrintArray();
 
             /*Console.WriteLine($"\nPlease, input sort by buble: 1-Ascending  2-Descending");*/
-            Console.WriteLine($"\nBuble sort ascending array 0-100");
+            Console.WriteLine($"\n\nBuble sort ascending array 0-100");
             sort.BubleSortAsc();
             sort.PrintArray();
 
-            Console.WriteLine($"\nBuble sort desccending array 0-100");
+            Console.WriteLine($"\n\nBuble sort desccending array 0-100");
             sort.BubleSortDesc();
             sort.PrintArray();
 
-            Console.WriteLine($"\nSelection sort ascending array 0-100");
+            Console.WriteLine($"\n\nSelection sort ascending array 0-100");
             sort.SelectionSortAsc();
             sort.PrintArray();
 
-            Console.WriteLine($"\nSelection sort desccending array 0-100");
+            Console.WriteLine($"\n\nSelection sort desccending array 0-100");
             sort.SelectionSortDesc();
             sort.PrintArray();
             
-            Console.WriteLine($"\nInsertion sort desccending array 0-100");
+            Console.WriteLine($"\n\nInsertion sort ascending array 0-100");
             sort.InsertionSortAsc();
             sort.PrintArray();
-            /*string choose = Console.ReadLine();
-            if(int.TryParse(choose, out int method))
-            {
-                switch (method)
-                {
-                    case 1:
-                        Console.WriteLine($"\nAscending array 0-100");
-                        sort.BubleSortAsc();
-                        sort.PrintArray();
-                        break;
-                    case 2:
-                        Console.WriteLine($"\nDesccending array 0-100");
-                        sort.BubleSortDesc();
-                        sort.PrintArray();
-                        break;
-                    default:
-                        break;
-                }
-            }*/
+
+            Console.WriteLine($"\n\nInsertion sort desccending array 0-100");
+            sort.InsertionSortDesc();
+            sort.PrintArray();
         }
 
         public void GenerateArray()
@@ -140,17 +125,41 @@ namespace homework_lesson_6_arrays
 
         public void InsertionSortAsc()
         {
-            int index;
-            int temp;
-            for(int i = 1; i < array.Length; i++)
+            for (int i = 1; i < array.Length; ++i)
             {
-                temp = array[i];
-                index = i;
-                while (index > 0 && temp > array[index - 1])
+                int key = array[i];
+                int j = i - 1;
+
+                // Move elements of array[0..i-1],
+                // that are greater than key,
+                // to one position ahead of
+                // their current position
+                while (j >= 0 && array[j] > key)
                 {
-                    array[index] = array[index - 1];
+                    array[j + 1] = array[j];
+                    j = j - 1;
                 }
-                array[index] = temp;
+                array[j + 1] = key;
+            }
+        }
+        
+        public void InsertionSortDesc()
+        {
+            for (int i = 1; i < array.Length; ++i)
+            {
+                int key = array[i];
+                int j = i - 1;
+
+                // Move elements of array[0..i-1],
+                // that are greater than key,
+                // to one position ahead of
+                // their current position
+                while (j >= 0 && array[j] < key)
+                {
+                    array[j + 1] = array[j];
+                    j = j - 1;
+                }
+                array[j + 1] = key;
             }
         }
     }
